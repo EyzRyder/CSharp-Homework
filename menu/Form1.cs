@@ -60,5 +60,12 @@ namespace menu
             System.Diagnostics.Process.Start("https://github.com/EyzRyder");
             Application.Exit();
         }
+
+        private void pastelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPastelaria frm3 = new frmPastelaria();
+            frm3.Show();
+            this.Close();
+        }
     }
 }
