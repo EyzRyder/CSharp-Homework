@@ -65,7 +65,11 @@ namespace menu
         {
             frmPastelaria frm3 = new frmPastelaria();
             frm3.Show();
-            this.Close();
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

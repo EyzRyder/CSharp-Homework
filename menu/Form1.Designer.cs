@@ -36,12 +36,12 @@ namespace menu
             this.amigoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pastelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portfolioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.pastelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,14 +72,14 @@ namespace menu
             // 
             this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.sairToolStripMenuItem.Text = "&Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // amigoToolStripMenuItem
             // 
             this.amigoToolStripMenuItem.Name = "amigoToolStripMenuItem";
-            this.amigoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.amigoToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.amigoToolStripMenuItem.Text = "&Abrir";
             this.amigoToolStripMenuItem.Click += new System.EventHandler(this.amigoToolStripMenuItem_Click);
             // 
@@ -96,9 +96,16 @@ namespace menu
             // 
             this.paintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("paintToolStripMenuItem.Image")));
             this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
-            this.paintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paintToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
             this.paintToolStripMenuItem.Text = "Paint";
             this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
+            // 
+            // pastelToolStripMenuItem
+            // 
+            this.pastelToolStripMenuItem.Name = "pastelToolStripMenuItem";
+            this.pastelToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.pastelToolStripMenuItem.Text = "Pastel";
+            this.pastelToolStripMenuItem.Click += new System.EventHandler(this.pastelToolStripMenuItem_Click);
             // 
             // mEToolStripMenuItem
             // 
@@ -112,14 +119,14 @@ namespace menu
             // githubToolStripMenuItem
             // 
             this.githubToolStripMenuItem.Name = "githubToolStripMenuItem";
-            this.githubToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.githubToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.githubToolStripMenuItem.Text = "Github";
             this.githubToolStripMenuItem.Click += new System.EventHandler(this.githubToolStripMenuItem_Click);
             // 
             // portfolioToolStripMenuItem
             // 
             this.portfolioToolStripMenuItem.Name = "portfolioToolStripMenuItem";
-            this.portfolioToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.portfolioToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.portfolioToolStripMenuItem.Text = "Portfolio";
             this.portfolioToolStripMenuItem.Click += new System.EventHandler(this.portfolioToolStripMenuItem_Click);
             // 
@@ -132,6 +139,7 @@ namespace menu
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripButton1
             // 
@@ -142,13 +150,6 @@ namespace menu
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // pastelToolStripMenuItem
-            // 
-            this.pastelToolStripMenuItem.Name = "pastelToolStripMenuItem";
-            this.pastelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pastelToolStripMenuItem.Text = "Pastel";
-            this.pastelToolStripMenuItem.Click += new System.EventHandler(this.pastelToolStripMenuItem_Click);
             // 
             // Form1
             // 
