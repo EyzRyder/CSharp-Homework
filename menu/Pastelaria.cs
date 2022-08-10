@@ -297,6 +297,8 @@ namespace menu
             txtTotal.Text = "0";
             txtPago.Text = "0";
             txtTroco.Text = "0";
+            txtEntrega.Text = " ";
+            txtServ.Text = " ";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

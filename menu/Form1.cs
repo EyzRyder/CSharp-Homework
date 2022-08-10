@@ -71,5 +71,11 @@ namespace menu
         {
 
         }
+
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmEstoque frm4 = new frmEstoque();
+            frm4.Show();
+        }
     }
 }

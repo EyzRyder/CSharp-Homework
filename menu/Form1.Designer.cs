@@ -42,6 +42,7 @@ namespace menu
             this.portfolioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -72,14 +73,14 @@ namespace menu
             // 
             this.sairToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("sairToolStripMenuItem.Image")));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sairToolStripMenuItem.Text = "&Sair";
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // amigoToolStripMenuItem
             // 
             this.amigoToolStripMenuItem.Name = "amigoToolStripMenuItem";
-            this.amigoToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.amigoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.amigoToolStripMenuItem.Text = "&Abrir";
             this.amigoToolStripMenuItem.Click += new System.EventHandler(this.amigoToolStripMenuItem_Click);
             // 
@@ -87,7 +88,8 @@ namespace menu
             // 
             this.editarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.paintToolStripMenuItem,
-            this.pastelToolStripMenuItem});
+            this.pastelToolStripMenuItem,
+            this.stockToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.editarToolStripMenuItem.Text = "Apps";
@@ -96,14 +98,14 @@ namespace menu
             // 
             this.paintToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("paintToolStripMenuItem.Image")));
             this.paintToolStripMenuItem.Name = "paintToolStripMenuItem";
-            this.paintToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.paintToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.paintToolStripMenuItem.Text = "Paint";
             this.paintToolStripMenuItem.Click += new System.EventHandler(this.paintToolStripMenuItem_Click);
             // 
             // pastelToolStripMenuItem
             // 
             this.pastelToolStripMenuItem.Name = "pastelToolStripMenuItem";
-            this.pastelToolStripMenuItem.Size = new System.Drawing.Size(105, 22);
+            this.pastelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pastelToolStripMenuItem.Text = "Pastel";
             this.pastelToolStripMenuItem.Click += new System.EventHandler(this.pastelToolStripMenuItem_Click);
             // 
@@ -151,6 +153,13 @@ namespace menu
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // stockToolStripMenuItem
+            // 
+            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockToolStripMenuItem.Text = "Stock";
+            this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -161,7 +170,7 @@ namespace menu
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "HomeWork Folder";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -185,6 +194,7 @@ namespace menu
         private System.Windows.Forms.ToolStripMenuItem githubToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem portfolioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pastelToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
     }
 }
 

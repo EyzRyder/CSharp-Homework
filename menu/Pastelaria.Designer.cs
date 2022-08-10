@@ -38,6 +38,7 @@ namespace menu
             this.rdbCerv = new System.Windows.Forms.RadioButton();
             this.rdbNenhum = new System.Windows.Forms.RadioButton();
             this.grbPastel = new System.Windows.Forms.GroupBox();
+            this.nudBacalhau = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -82,7 +83,9 @@ namespace menu
             this.rdbDelivery = new System.Windows.Forms.RadioButton();
             this.rdbMesa = new System.Windows.Forms.RadioButton();
             this.grbFValorP = new System.Windows.Forms.GroupBox();
-            this.txtEntrega = new System.Windows.Forms.TextBox();
+            this.txtEntrega = new System.Windows.Forms.Label();
+            this.txtServ = new System.Windows.Forms.Label();
+            this.txtServico = new System.Windows.Forms.Label();
             this.lblEntrega = new System.Windows.Forms.Label();
             this.lblserv = new System.Windows.Forms.Label();
             this.grbFValor = new System.Windows.Forms.GroupBox();
@@ -95,13 +98,11 @@ namespace menu
             this.label1 = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.nudBacalhau = new System.Windows.Forms.NumericUpDown();
             this.btncal = new System.Windows.Forms.Button();
-            this.txtServico = new System.Windows.Forms.Label();
-            this.txtServ = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
             this.grbBebida.SuspendLayout();
             this.grbPastel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBacalhau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudModa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCarneS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCalabresaQ)).BeginInit();
@@ -117,14 +118,13 @@ namespace menu
             this.grbFServ.SuspendLayout();
             this.grbFValorP.SuspendLayout();
             this.grbFValor.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBacalhau)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(318, 31);
+            this.lblTitulo.Location = new System.Drawing.Point(268, 31);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(141, 23);
             this.lblTitulo.TabIndex = 0;
@@ -265,6 +265,15 @@ namespace menu
             this.grbPastel.TabIndex = 6;
             this.grbPastel.TabStop = false;
             this.grbPastel.Text = "Pastel";
+            // 
+            // nudBacalhau
+            // 
+            this.nudBacalhau.Enabled = false;
+            this.nudBacalhau.Location = new System.Drawing.Point(245, 212);
+            this.nudBacalhau.Name = "nudBacalhau";
+            this.nudBacalhau.Size = new System.Drawing.Size(55, 20);
+            this.nudBacalhau.TabIndex = 52;
+            this.nudBacalhau.ValueChanged += new System.EventHandler(this.nudBacalhau_ValueChanged);
             // 
             // label13
             // 
@@ -470,7 +479,7 @@ namespace menu
             this.lblValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValor.Location = new System.Drawing.Point(25, 33);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(45, 16);
+            this.lblValor.Size = new System.Drawing.Size(44, 16);
             this.lblValor.TabIndex = 28;
             this.lblValor.Text = "Valor";
             this.lblValor.Click += new System.EventHandler(this.lblValor_Click);
@@ -622,7 +631,7 @@ namespace menu
             this.lblQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblQtd.Location = new System.Drawing.Point(227, 32);
             this.lblQtd.Name = "lblQtd";
-            this.lblQtd.Size = new System.Drawing.Size(88, 16);
+            this.lblQtd.Size = new System.Drawing.Size(87, 16);
             this.lblQtd.TabIndex = 2;
             this.lblQtd.Text = "Quantidade";
             // 
@@ -632,7 +641,7 @@ namespace menu
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblTipo.Location = new System.Drawing.Point(133, 32);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(40, 16);
+            this.lblTipo.Size = new System.Drawing.Size(39, 16);
             this.lblTipo.TabIndex = 1;
             this.lblTipo.Text = "Tipo";
             // 
@@ -702,9 +711,9 @@ namespace menu
             // grbFValorP
             // 
             this.grbFValorP.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grbFValorP.Controls.Add(this.txtEntrega);
             this.grbFValorP.Controls.Add(this.txtServ);
             this.grbFValorP.Controls.Add(this.txtServico);
-            this.grbFValorP.Controls.Add(this.txtEntrega);
             this.grbFValorP.Controls.Add(this.lblEntrega);
             this.grbFValorP.Controls.Add(this.lblserv);
             this.grbFValorP.Location = new System.Drawing.Point(410, 339);
@@ -717,13 +726,30 @@ namespace menu
             // 
             // txtEntrega
             // 
-            this.txtEntrega.Enabled = false;
-            this.txtEntrega.Location = new System.Drawing.Point(91, 60);
+            this.txtEntrega.AutoSize = true;
+            this.txtEntrega.Location = new System.Drawing.Point(110, 63);
             this.txtEntrega.Name = "txtEntrega";
-            this.txtEntrega.Size = new System.Drawing.Size(100, 20);
-            this.txtEntrega.TabIndex = 3;
-            this.txtEntrega.Text = "0";
-            this.txtEntrega.TextChanged += new System.EventHandler(this.txtEntrega_TextChanged);
+            this.txtEntrega.Size = new System.Drawing.Size(10, 13);
+            this.txtEntrega.TabIndex = 6;
+            this.txtEntrega.Text = " ";
+            // 
+            // txtServ
+            // 
+            this.txtServ.AutoSize = true;
+            this.txtServ.Location = new System.Drawing.Point(110, 39);
+            this.txtServ.Name = "txtServ";
+            this.txtServ.Size = new System.Drawing.Size(10, 13);
+            this.txtServ.TabIndex = 5;
+            this.txtServ.Text = " ";
+            this.txtServ.Click += new System.EventHandler(this.txtServ_Click);
+            // 
+            // txtServico
+            // 
+            this.txtServico.AutoSize = true;
+            this.txtServico.Location = new System.Drawing.Point(104, 39);
+            this.txtServico.Name = "txtServico";
+            this.txtServico.Size = new System.Drawing.Size(0, 13);
+            this.txtServico.TabIndex = 4;
             // 
             // lblEntrega
             // 
@@ -771,7 +797,6 @@ namespace menu
             // 
             // txtPago
             // 
-            this.txtPago.Enabled = false;
             this.txtPago.Location = new System.Drawing.Point(91, 49);
             this.txtPago.Name = "txtPago";
             this.txtPago.Size = new System.Drawing.Size(100, 20);
@@ -844,15 +869,6 @@ namespace menu
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // nudBacalhau
-            // 
-            this.nudBacalhau.Enabled = false;
-            this.nudBacalhau.Location = new System.Drawing.Point(245, 212);
-            this.nudBacalhau.Name = "nudBacalhau";
-            this.nudBacalhau.Size = new System.Drawing.Size(55, 20);
-            this.nudBacalhau.TabIndex = 52;
-            this.nudBacalhau.ValueChanged += new System.EventHandler(this.nudBacalhau_ValueChanged);
-            // 
             // btncal
             // 
             this.btncal.Location = new System.Drawing.Point(402, 583);
@@ -862,24 +878,6 @@ namespace menu
             this.btncal.Text = "Calcular";
             this.btncal.UseVisualStyleBackColor = true;
             this.btncal.Click += new System.EventHandler(this.btncal_Click);
-            // 
-            // txtServico
-            // 
-            this.txtServico.AutoSize = true;
-            this.txtServico.Location = new System.Drawing.Point(104, 39);
-            this.txtServico.Name = "txtServico";
-            this.txtServico.Size = new System.Drawing.Size(0, 13);
-            this.txtServico.TabIndex = 4;
-            // 
-            // txtServ
-            // 
-            this.txtServ.AutoSize = true;
-            this.txtServ.Location = new System.Drawing.Point(110, 39);
-            this.txtServ.Name = "txtServ";
-            this.txtServ.Size = new System.Drawing.Size(10, 13);
-            this.txtServ.TabIndex = 5;
-            this.txtServ.Text = " ";
-            this.txtServ.Click += new System.EventHandler(this.txtServ_Click);
             // 
             // btnPagar
             // 
@@ -915,6 +913,7 @@ namespace menu
             this.grbBebida.PerformLayout();
             this.grbPastel.ResumeLayout(false);
             this.grbPastel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBacalhau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudModa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCarneS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudCalabresaQ)).EndInit();
@@ -933,7 +932,6 @@ namespace menu
             this.grbFValorP.PerformLayout();
             this.grbFValor.ResumeLayout(false);
             this.grbFValor.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudBacalhau)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -974,7 +972,6 @@ namespace menu
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.RadioButton rdbDelivery;
         private System.Windows.Forms.RadioButton rdbMesa;
-        private System.Windows.Forms.TextBox txtEntrega;
         private System.Windows.Forms.Label lblEntrega;
         private System.Windows.Forms.Label lblserv;
         private System.Windows.Forms.TextBox txtTroco;
@@ -1012,5 +1009,6 @@ namespace menu
         private System.Windows.Forms.Label txtServico;
         private System.Windows.Forms.Label txtServ;
         private System.Windows.Forms.Button btnPagar;
+        private System.Windows.Forms.Label txtEntrega;
     }
 }
