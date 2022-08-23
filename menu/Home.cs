@@ -89,5 +89,11 @@ namespace menu
             Carrinho frm6 = new Carrinho("Oia o carrinho");
             frm6.ShowDialog();
         }
+
+        private void calcularCoisasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lista1 frm7 = new Lista1();
+            frm7.Show();
+        }
     }
 }

@@ -37,6 +37,7 @@ namespace menu
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gogglyeyesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendingMachinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portfolioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,7 @@ namespace menu
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calcularCoisasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,7 +72,8 @@ namespace menu
             this.stockToolStripMenuItem,
             this.gogglyeyesToolStripMenuItem,
             this.vendingMachinToolStripMenuItem,
-            this.carrinhoToolStripMenuItem});
+            this.carrinhoToolStripMenuItem,
+            this.calcularCoisasToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.editarToolStripMenuItem.Text = "Apps";
@@ -111,6 +113,13 @@ namespace menu
             this.vendingMachinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.vendingMachinToolStripMenuItem.Text = "VendingMachin";
             this.vendingMachinToolStripMenuItem.Click += new System.EventHandler(this.vendingMachinToolStripMenuItem_Click);
+            // 
+            // carrinhoToolStripMenuItem
+            // 
+            this.carrinhoToolStripMenuItem.Name = "carrinhoToolStripMenuItem";
+            this.carrinhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carrinhoToolStripMenuItem.Text = "Carrinho";
+            this.carrinhoToolStripMenuItem.Click += new System.EventHandler(this.carrinhoToolStripMenuItem_Click);
             // 
             // mEToolStripMenuItem
             // 
@@ -179,12 +188,12 @@ namespace menu
             this.label1.TabIndex = 5;
             this.label1.Text = "Todos meus atividades de Desenvolvimento de Sistemas";
             // 
-            // carrinhoToolStripMenuItem
+            // calcularCoisasToolStripMenuItem
             // 
-            this.carrinhoToolStripMenuItem.Name = "carrinhoToolStripMenuItem";
-            this.carrinhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.carrinhoToolStripMenuItem.Text = "Carrinho";
-            this.carrinhoToolStripMenuItem.Click += new System.EventHandler(this.carrinhoToolStripMenuItem_Click);
+            this.calcularCoisasToolStripMenuItem.Name = "calcularCoisasToolStripMenuItem";
+            this.calcularCoisasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calcularCoisasToolStripMenuItem.Text = "Calcular coisas";
+            this.calcularCoisasToolStripMenuItem.Click += new System.EventHandler(this.calcularCoisasToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -227,6 +236,7 @@ namespace menu
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem vendingMachinToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem carrinhoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calcularCoisasToolStripMenuItem;
     }
 }
 
