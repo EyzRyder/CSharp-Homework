@@ -83,5 +83,11 @@ namespace menu
             VendingMachine frm5 = new VendingMachine();
             frm5.Show();
         }
+
+        private void carrinhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Carrinho frm6 = new Carrinho("Oia o carrinho");
+            frm6.ShowDialog();
+        }
     }
 }

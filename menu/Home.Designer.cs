@@ -35,15 +35,16 @@ namespace menu
             this.paintToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pastelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gogglyeyesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vendingMachinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.githubToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portfolioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.gogglyeyesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.vendingMachinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.carrinhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,7 +70,8 @@ namespace menu
             this.pastelToolStripMenuItem,
             this.stockToolStripMenuItem,
             this.gogglyeyesToolStripMenuItem,
-            this.vendingMachinToolStripMenuItem});
+            this.vendingMachinToolStripMenuItem,
+            this.carrinhoToolStripMenuItem});
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
             this.editarToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.editarToolStripMenuItem.Text = "Apps";
@@ -95,6 +97,20 @@ namespace menu
             this.stockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.stockToolStripMenuItem.Text = "Stock";
             this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
+            // 
+            // gogglyeyesToolStripMenuItem
+            // 
+            this.gogglyeyesToolStripMenuItem.Name = "gogglyeyesToolStripMenuItem";
+            this.gogglyeyesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.gogglyeyesToolStripMenuItem.Text = "Gogglyeyes";
+            this.gogglyeyesToolStripMenuItem.Click += new System.EventHandler(this.gogglyeyesToolStripMenuItem_Click);
+            // 
+            // vendingMachinToolStripMenuItem
+            // 
+            this.vendingMachinToolStripMenuItem.Name = "vendingMachinToolStripMenuItem";
+            this.vendingMachinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vendingMachinToolStripMenuItem.Text = "VendingMachin";
+            this.vendingMachinToolStripMenuItem.Click += new System.EventHandler(this.vendingMachinToolStripMenuItem_Click);
             // 
             // mEToolStripMenuItem
             // 
@@ -143,13 +159,6 @@ namespace menu
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // gogglyeyesToolStripMenuItem
-            // 
-            this.gogglyeyesToolStripMenuItem.Name = "gogglyeyesToolStripMenuItem";
-            this.gogglyeyesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.gogglyeyesToolStripMenuItem.Text = "Gogglyeyes";
-            this.gogglyeyesToolStripMenuItem.Click += new System.EventHandler(this.gogglyeyesToolStripMenuItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
@@ -170,12 +179,12 @@ namespace menu
             this.label1.TabIndex = 5;
             this.label1.Text = "Todos meus atividades de Desenvolvimento de Sistemas";
             // 
-            // vendingMachinToolStripMenuItem
+            // carrinhoToolStripMenuItem
             // 
-            this.vendingMachinToolStripMenuItem.Name = "vendingMachinToolStripMenuItem";
-            this.vendingMachinToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.vendingMachinToolStripMenuItem.Text = "VendingMachin";
-            this.vendingMachinToolStripMenuItem.Click += new System.EventHandler(this.vendingMachinToolStripMenuItem_Click);
+            this.carrinhoToolStripMenuItem.Name = "carrinhoToolStripMenuItem";
+            this.carrinhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.carrinhoToolStripMenuItem.Text = "Carrinho";
+            this.carrinhoToolStripMenuItem.Click += new System.EventHandler(this.carrinhoToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -217,6 +226,7 @@ namespace menu
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripMenuItem vendingMachinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem carrinhoToolStripMenuItem;
     }
 }
 
