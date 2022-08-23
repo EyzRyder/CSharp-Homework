@@ -26,13 +26,13 @@ namespace menu
         {
             if (progressBar1.Value < 100)
             {
-                progressBar1.Value +=5;
+                progressBar1.Value +=10;
             }
             else
             {
                 timer1.Enabled = false;
                 this.Visible = false;
-                Form1 visivel = new Form1();
+                Home visivel = new Home();
                 visivel.ShowDialog();
                 this.Close();
             }
