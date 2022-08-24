@@ -95,5 +95,11 @@ namespace menu
             Lista1 frm7 = new Lista1();
             frm7.Show();
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatrixSharp frm8 = new MatrixSharp();
+            frm8.Show();
+        }
     }
 }

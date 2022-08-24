@@ -52,6 +52,12 @@
     <Compile Include="Carrinho.Designer.cs">
       <DependentUpon>Carrinho.cs</DependentUpon>
     </Compile>
+    <Compile Include="MatrixSharp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatrixSharp.Designer.cs">
+      <DependentUpon>MatrixSharp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lista1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="Carrinho.resx">
       <DependentUpon>Carrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatrixSharp.resx">
+      <DependentUpon>MatrixSharp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lista1.resx">
       <DependentUpon>Lista1.cs</DependentUpon>
