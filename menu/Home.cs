@@ -101,5 +101,11 @@ namespace menu
             MatrixSharp frm8 = new MatrixSharp();
             frm8.Show();
         }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            DBTestRegister frm9 = new DBTestRegister();
+            frm9.Show();
+        }
     }
 }
